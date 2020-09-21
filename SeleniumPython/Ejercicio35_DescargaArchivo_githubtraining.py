@@ -18,7 +18,7 @@ class usando_unittest(unittest.TestCase):
 		time.sleep(3)
 		driver.find_element_by_xpath("/html/body/p[2]/a/img").click()
 		time.sleep(15)
-
+#La funcion tearDown cierra el driver de chrome
 	def tearDown(self):
 		self.driver.close()
 
