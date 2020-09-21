@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Codigo para promp alert</title>
+</head>
+<body>
+<button name="promp_alert" onclick="myFunction()" >Presiona aqui</button>
+<p id="demostracion"></p>
+
+<script>
+	function myFunction() {
+		var texto
+		var usuario = prompt("Ingresa tu nombre: ","Aqui va tu nombre");
+		if (usuario == null || usuario == ""){
+			texto = "El usuario cancelo el ingreso de datos.";
+		}else{
+			texto = "Hola " + usuario + " bienvenido!";
+		}
+		document.getElementById("demostracion").innerHTML = texto;
+	}
+
+
+</script>
+
+</body>
+</html>
