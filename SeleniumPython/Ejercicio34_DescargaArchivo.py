@@ -10,6 +10,7 @@ class usando_unittest(unittest.TestCase):
 		chromeOptions.add_experimental_option("prefs",{"download.default_directory" : "C:\\DriverChrome\\"})
 		self.driver = webdriver.Chrome(executable_path = r"C:\DriverChrome\chromedriver.exe", chrome_options = chromeOptions)
 
+	#La funcion descarga_archivo sirve para descargar un archivo desde una pagina web
 	def test_descarga_archivo(self):
 		driver = self.driver
 		driver.get("https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_a_download")
