@@ -4,7 +4,7 @@ from selenium.webdriver.chrome.options import Options
 import time
 
 class usando_unittest(unittest.TestCase):
-
+	#La funcion setUp sirve para cargar el driver de chrome
 	def setUp(self):
 		chromeOptions = Options()
 		chromeOptions.add_experimental_option("prefs",{"download.default_directory" : "C:\\DriverChrome\\"})
